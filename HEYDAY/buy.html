@@ -3,117 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mua hàng - Student Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Đặt mua sản phẩm thời trang HEYDAY Studio trực tuyến. Hỗ trợ giao tận nơi toàn quốc, đổi size 7 ngày.">
+    <title>Đặt Hàng — HEYDAY Studio</title>
+
+    <!-- Google Fonts: Cormorant Garamond & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <a href="index.html" class="logo">Student Shop</a>
+    <!-- Kinetic Editorial Marquee Ticker -->
+    <aside class="editorial-ticker" aria-label="Thông báo thời trang">
+        <div class="ticker-track">
+            <span>HEYDAY STUDIO / SPRING SUMMER 2026</span>
+            <span class="ticker-dot">•</span>
+            <span>THỜI TRANG SINH VIÊN & BẢN SẮC TRẺ</span>
+            <span class="ticker-dot">•</span>
+            <span>CHẤT VẢI TUYỂN CHỌN / FORM DÁNG TỰ NHIÊN</span>
+            <span class="ticker-dot">•</span>
+            <span>GIAO HÀNG TOÀN QUỐC & ĐỔI SIZE 7 NGÀY</span>
+            <span class="ticker-dot">•</span>
+            <span>HEYDAY STUDIO / SPRING SUMMER 2026</span>
+            <span class="ticker-dot">•</span>
+            <span>THỜI TRANG SINH VIÊN & BẢN SẮC TRẺ</span>
+            <span class="ticker-dot">•</span>
+            <span>CHẤT VẢI TUYỂN CHỌN / FORM DÁNG TỰ NHIÊN</span>
+            <span class="ticker-dot">•</span>
+            <span>GIAO HÀNG TOÀN QUỐC & ĐỔI SIZE 7 NGÀY</span>
+            <span class="ticker-dot">•</span>
+        </div>
+    </aside>
 
-        <nav>
-            <a href="index.html">Trang chủ</a>
-            <a href="products.html">Sản phẩm</a>
-            <a href="about.html">Giới thiệu</a>
-            <a href="buy.html" class="active">Mua hàng</a>
-        </nav>
+    <!-- Minimalist Architectural Header (Fixed & Synchronized) -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" id="brand-logo">
+                <span class="logo-name">HEYDAY</span>
+                <span class="logo-sub">STUDIO</span>
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html" class="nav-item">Trang chủ</a>
+                <a href="products.html" class="nav-item">Bộ sưu tập</a>
+                <a href="about.html" class="nav-item">Triết lý</a>
+            </nav>
+
+            <div class="header-right">
+                <a href="buy.html" class="bag-link" id="bag-link">
+                    <span class="bag-text">Giỏ hàng</span>
+                    <span class="bag-count">[ 0 ]</span>
+                </a>
+                <a href="buy.html" class="header-action-btn" id="header-cta">Mua hàng</a>
+            </div>
+        </div>
     </header>
 
     <main class="buy-page">
-        <section class="buy-intro">
-            <p class="subtitle">Student Shop</p>
-            <h1>Đặt hàng ngay</h1>
-            <p>Điền thông tin bên dưới để đặt mua sản phẩm yêu thích.</p>
-        </section>
+        <div class="container">
+            <section class="buy-intro">
+                <span class="section-kicker">DIRECT ORDER / ĐẶT HÀNG TRỰC TIẾP</span>
+                <h1 class="section-display-title">
+                    Xác Nhận<br>
+                    <span class="calligraphic-accent">Đơn Hàng.</span>
+                </h1>
+                <p>Điền thông tin bên dưới để HEYDAY chuẩn bị gói hàng và giao tới tận tay bạn.</p>
+            </section>
 
-        <section class="buy-section">
-            <form class="buy-form" action="#" method="post">
+            <section class="buy-section">
+                <form class="buy-form" action="#" method="post">
+                    <h2>Thông Tin Nhận Hàng</h2>
 
-                <h2>Thông tin đơn hàng</h2>
+                    <label for="fullname">Họ và tên của bạn</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Ví dụ: Nguyễn Văn An"
+                        required
+                    >
 
-                <label for="fullname">Họ và tên</label>
-                <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    placeholder="Nhập họ và tên"
-                    required
-                >
+                    <label for="phone">Số điện thoại liên hệ</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Số điện thoại nhận hàng"
+                        required
+                    >
 
-                <label for="phone">Số điện thoại</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="Nhập số điện thoại"
-                    required
-                >
+                    <label for="email">Địa chỉ Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Để nhận mã vận đơn đơn hàng"
+                    >
 
-                <label for="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Nhập địa chỉ email"
-                >
+                    <label for="address">Địa chỉ giao nhận cụ thể</label>
+                    <textarea
+                        id="address"
+                        name="address"
+                        placeholder="Số phòng / Tên ký túc xá hoặc địa chỉ nhà riêng..."
+                        required
+                    ></textarea>
 
-                <label for="address">Địa chỉ nhận hàng</label>
-                <textarea
-                    id="address"
-                    name="address"
-                    placeholder="Nhập địa chỉ nhận hàng"
-                    required
-                ></textarea>
+                    <label for="product">Lựa chọn sản phẩm</label>
+                    <select id="product" name="product" required>
+                        <option value="">-- Chọn sản phẩm trong bộ sưu tập --</option>
+                        <option value="ao-khoac-denim">Áo Khoác Denim Vintage — 149.000₫</option>
+                        <option value="ao-thun-summer">Áo Thun Summer Urban — 129.000₫</option>
+                        <option value="dam-nu-xoe">Đầm Nữ Dáng Xòe Pastel — 200.000₫</option>
+                        <option value="ao-so-mi">Áo Sơ Mi Tay Ngắn Minimal — 89.000₫</option>
+                        <option value="ao-varsity">Áo Khoác Bóng Chày College — 199.000₫</option>
+                        <option value="ao-khoac-gio">Áo Khoác Gió Thể Thao — 99.000₫</option>
+                        <option value="set-hoa-tiet">Bộ Đồ Họa Tiết Năng Động — 139.000₫</option>
+                        <option value="ao-len">Áo Len Dệt Phom Rộng — 179.000₫</option>
+                    </select>
 
-                <label for="product">Tên sản phẩm</label>
-                <input
-                    type="text"
-                    id="product"
-                    name="product"
-                    placeholder="Nhập tên sản phẩm muốn mua"
-                    required
-                >
+                    <label for="size">Kích cỡ (Unisex Standard)</label>
+                    <select id="size" name="size" required>
+                        <option value="">-- Chọn kích cỡ vừa vặn --</option>
+                        <option value="S">Size S (Dưới 52kg &bull; Dưới 1m60)</option>
+                        <option value="M">Size M (53 &mdash; 64kg &bull; 1m60 &mdash; 1m70)</option>
+                        <option value="L">Size L (65 &mdash; 75kg &bull; 1m70 &mdash; 1m78)</option>
+                        <option value="XL">Size XL (76 &mdash; 88kg &bull; Trên 1m78)</option>
+                    </select>
 
-                <label for="size">Kích cỡ</label>
-                <select id="size" name="size" required>
-                    <option value="">-- Chọn kích cỡ --</option>
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
-                    <option value="XL">XL</option>
-                </select>
+                    <label for="quantity">Số lượng</label>
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        value="1"
+                        required
+                    >
 
-                <label for="quantity">Số lượng</label>
-                <input
-                    type="number"
-                    id="quantity"
-                    name="quantity"
-                    min="1"
-                    value="1"
-                    required
-                >
+                    <label for="note">Ghi chú thêm về đơn hàng</label>
+                    <textarea
+                        id="note"
+                        name="note"
+                        placeholder="Thời gian nhận hàng thuận tiện hoặc yêu cầu thêm..."
+                    ></textarea>
 
-                <label for="note">Ghi chú</label>
-                <textarea
-                    id="note"
-                    name="note"
-                    placeholder="Ghi chú thêm nếu có"
-                ></textarea>
+                    <button type="submit" class="submit-btn" id="confirm-order-btn">
+                        Xác nhận đặt đơn hàng &rarr;
+                    </button>
 
-                <button type="submit" class="btn submit-btn">
-                    Xác nhận đặt hàng
-                </button>
-
-                <a href="index.html" class="back-link">
-                    Quay lại trang chủ
-                </a>
-
-            </form>
-        </section>
+                    <a href="index.html" class="back-link">
+                        &larr; Quay lại trang chủ
+                    </a>
+                </form>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Student Shop. All rights reserved.</p>
+    <!-- Minimalist Architectural Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top-row">
+                <div class="footer-col-main">
+                    <span class="footer-brand-title">HEYDAY</span>
+                    <p class="footer-brand-subtitle">STUDIO & DAILY WEAR FOR STUDENTS</p>
+                    <p class="footer-bio">
+                        Thương hiệu thời trang độc lập dành cho sinh viên Việt Nam. Tôn vinh nét đẹp chân thực, mộc mạc và phong cách tự do của thế hệ mới.
+                    </p>
+                </div>
+
+                <div class="footer-col-nav">
+                    <span class="footer-heading">Mục lục</span>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="products.html">Bộ sưu tập</a></li>
+                        <li><a href="about.html">Triết lý sáng lập</a></li>
+                        <li><a href="buy.html">Đặt mua trực tuyến</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-nav">
+                    <span class="footer-heading">Hỗ trợ</span>
+                    <ul class="footer-list">
+                        <li><a href="buy.html">Bảng quy chuẩn size</a></li>
+                        <li><a href="buy.html">Chính sách giao nhận</a></li>
+                        <li><a href="buy.html">Đổi trả trong 7 ngày</a></li>
+                        <li><a href="buy.html">Hỗ trợ sinh viên</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-contact">
+                    <span class="footer-heading">Thông tin liên hệ</span>
+                    <address class="footer-address">
+                        <p>Khuôn viên ĐH Phenikaa, Yên Nghĩa, Hà Đông, Hà Nội</p>
+                        <p>Hotline: <a href="tel:0987654321">0987.654.321</a></p>
+                        <p>Email: <a href="mailto:heyday.studio@gmail.com">heyday.studio@gmail.com</a></p>
+                        <p class="working-hours">Giờ tiếp đón: 08:30 &mdash; 21:30</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <span class="copyright-note">&copy; 2026 HEYDAY STUDIO. All rights reserved.</span>
+                <span class="design-credit">Editorial Fashion Showcase for Vietnamese Students</span>
+            </div>
+        </div>
     </footer>
 
 </body>

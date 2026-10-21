@@ -3,24 +3,583 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Store</title>
+    <meta name="description" content="HEYDAY Store — Không gian thời trang mang tinh thần thẩm mỹ phóng khoáng, tối giản và tự do dành cho thế hệ sinh viên trẻ.">
+    <title>HEYDAY — Studio & Thời trang sinh viên</title>
+
+    <!-- Google Fonts: Cormorant Garamond (Calligraphic / Aesthetic Serif) & Inter (Clean Editorial Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">Fashion Store</a>
 
-        <nav>
-            <a href="index.html">Trang chủ</a>
-            <a href="products.html">Sản phẩm</a>
-            <a href="about.html">Giới thiệu</a>
-            <a href="buy.html">Mua hàng</a>
-        </nav>
+    <!-- Kinetic Editorial Marquee Ticker -->
+    <aside class="editorial-ticker" aria-label="Thông báo thời trang">
+        <div class="ticker-track">
+            <span>HEYDAY STUDIO / SPRING SUMMER 2026</span>
+            <span class="ticker-dot">•</span>
+            <span>THỜI TRANG SINH VIÊN & BẢN SẮC TRẺ</span>
+            <span class="ticker-dot">•</span>
+            <span>CHẤT VẢI TUYỂN CHỌN / FORM DÁNG TỰ NHIÊN</span>
+            <span class="ticker-dot">•</span>
+            <span>GIAO HÀNG TOÀN QUỐC & ĐỔI SIZE 7 NGÀY</span>
+            <span class="ticker-dot">•</span>
+            <span>HEYDAY STUDIO / SPRING SUMMER 2026</span>
+            <span class="ticker-dot">•</span>
+            <span>THỜI TRANG SINH VIÊN & BẢN SẮC TRẺ</span>
+            <span class="ticker-dot">•</span>
+            <span>CHẤT VẢI TUYỂN CHỌN / FORM DÁNG TỰ NHIÊN</span>
+            <span class="ticker-dot">•</span>
+            <span>GIAO HÀNG TOÀN QUỐC & ĐỔI SIZE 7 NGÀY</span>
+            <span class="ticker-dot">•</span>
+        </div>
+    </aside>
+
+    <!-- Minimalist Architectural Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" id="brand-logo">
+                <span class="logo-name">HEYDAY</span>
+                <span class="logo-sub">STUDIO</span>
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html" class="nav-item active">Trang chủ</a>
+                <a href="products.html" class="nav-item">Sản phẩm</a>
+                <a href="about.html" class="nav-item">Về chúng tôi</a>
+            </nav>
+
+            <div class="header-right">
+                <a href="buy.html" class="bag-link" id="bag-link">
+                    <span class="bag-text">Giỏ hàng</span>
+                    <span class="bag-count">[ 0 ]</span>
+                </a>
+                <a href="buy.html" class="header-action-btn" id="header-cta">Mua hàng</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1>Chào mừng đến với Fashion Store!</h1>
-        <p>Khám phá phong cách của riêng bạn.</p>
+        <!-- Hero Section: Asymmetric Editorial Composition -->
+        <section class="hero-editorial" id="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    
+                    <!-- Text & Narrative Column -->
+                    <div class="hero-narrative">
+                        <div class="editorial-meta">
+                            <span class="meta-season">VOL. 01 — EDITION 2026</span>
+                            <span class="meta-line"></span>
+                            <span class="meta-archive">ARCHIVE</span>
+                        </div>
+
+                        <h1 class="hero-heading">
+                            Khắc Họa<br>
+                            Phong Cách<br>
+                            <span class="calligraphic-accent">Của Riêng Bạn.</span>
+                        </h1>
+
+                        <p class="hero-lead">
+                            HEYDAY định nghĩa lại thời trang thường nhật cho sinh viên: tinh giản trong đường nét, phóng khoáng trong phom dáng và kiên định với chất liệu thoáng mát cho nhịp sống giảng đường.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="products.html" class="btn-editorial btn-solid" id="hero-btn-explore">
+                                <span>Khám phá bộ sưu tập</span>
+                                <span class="arrow-glyph">&rarr;</span>
+                            </a>
+                            <a href="buy.html" class="btn-editorial btn-wire" id="hero-btn-buy">
+                                <span>Đặt hàng trực tuyến</span>
+                            </a>
+                        </div>
+
+                        <div class="hero-editorial-footnote">
+                            <div class="footnote-item">
+                                <span class="footnote-idx">01</span>
+                                <span class="footnote-txt">Form rộng unisex &bull; Chuẩn tỉ lệ</span>
+                            </div>
+                            <div class="footnote-item">
+                                <span class="footnote-idx">02</span>
+                                <span class="footnote-txt">Vải cotton, denim, đũi tự nhiên</span>
+                            </div>
+                            <div class="footnote-item">
+                                <span class="footnote-idx">03</span>
+                                <span class="footnote-txt">Mức giá trợ lực ngân sách sinh viên</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Lookbook Column (Asymmetric Offset) -->
+                    <div class="hero-visual-wrap">
+                        <figure class="hero-lookbook-frame">
+                            <img src="images/hero-banner.jpg" alt="Bộ sưu tập sinh viên HEYDAY Store 2026" class="hero-lookbook-img" loading="eager">
+                            <figcaption class="lookbook-overlay-tag">
+                                <span class="tag-label">LOOK 01 / AUTUMN CAMPUS</span>
+                                <span class="tag-specs">HANOI &bull; 2026</span>
+                            </figcaption>
+                        </figure>
+                        <div class="lookbook-sidebar-note">
+                            <span class="vertical-text">ESTABLISHED 2026 &mdash; VIETNAMESE STUDENT WEAR</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Asymmetric Categories Layout (Phân bổ không đồng đều) -->
+        <section class="asymmetric-categories" id="curated-categories">
+            <div class="container">
+                <header class="section-editorial-header">
+                    <span class="section-kicker">CATALOGUE / 01</span>
+                    <h2 class="section-display-title">Danh Mục Chọn Lọc</h2>
+                    <p class="section-note">Thiết kế tối giản, dễ dàng ứng dụng từ giờ học đường tới những buổi dạo phố cuối tuần.</p>
+                </header>
+
+                <div class="editorial-cat-grid">
+                    <!-- Tall Featured Category Card -->
+                    <a href="products.html" class="cat-tile cat-tile-tall" id="cat-outerwear">
+                        <div class="tile-image-container">
+                            <img src="images/ao-khoac-denim.jpg" alt="Áo khoác và varsity jacket" loading="lazy">
+                        </div>
+                        <div class="tile-details">
+                            <span class="tile-number">01</span>
+                            <div class="tile-text-wrap">
+                                <h3 class="tile-title">Áo Khoác & Varsity</h3>
+                                <p class="tile-desc">Chất denim wash cổ điển và varsity thể thao năng động.</p>
+                            </div>
+                            <span class="tile-explore-arrow">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Stacked Right Column: 2 Cards -->
+                    <div class="cat-column-stack">
+                        <a href="products.html" class="cat-tile cat-tile-compact" id="cat-tshirt">
+                            <div class="tile-image-container">
+                                <img src="images/ao-thun-summer.jpg" alt="Áo thun cotton form rộng" loading="lazy">
+                            </div>
+                            <div class="tile-details">
+                                <span class="tile-number">02</span>
+                                <div class="tile-text-wrap">
+                                    <h3 class="tile-title">Áo Thun Phom Rộng</h3>
+                                    <p class="tile-desc">Cotton dệt 100% thoáng khí, gam màu mộc mạc.</p>
+                                </div>
+                                <span class="tile-explore-arrow">&rarr;</span>
+                            </div>
+                        </a>
+
+                        <a href="products.html" class="cat-tile cat-tile-compact" id="cat-shirt">
+                            <div class="tile-image-container">
+                                <img src="images/ao-so-mi.jpg" alt="Sơ mi tay ngắn tối giản" loading="lazy">
+                            </div>
+                            <div class="tile-details">
+                                <span class="tile-number">03</span>
+                                <div class="tile-text-wrap">
+                                    <h3 class="tile-title">Sơ Mi Tối Giản</h3>
+                                    <p class="tile-desc">Cổ bẻ thanh lịch, vải đũi linen nhẹ dịu cho ngày dài.</p>
+                                </div>
+                                <span class="tile-explore-arrow">&rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Fourth Category: Feminine Silhouette -->
+                    <a href="products.html" class="cat-tile cat-tile-accent" id="cat-dress">
+                        <div class="tile-image-container">
+                            <img src="images/dam-nu-xoe.jpg" alt="Đầm dáng xòe nữ tính" loading="lazy">
+                        </div>
+                        <div class="tile-details">
+                            <span class="tile-number">04</span>
+                            <div class="tile-text-wrap">
+                                <h3 class="tile-title">Đầm & Váy Xòe</h3>
+                                <p class="tile-desc">Đường rủ tự nhiên, họa tiết dịu dàng chuẩn nét sinh viên.</p>
+                            </div>
+                            <span class="tile-explore-arrow">&rarr;</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Asymmetric Staggered Products Grid (Bộ sưu tập sản phẩm) -->
+        <section class="asymmetric-products" id="featured-collection">
+            <div class="container">
+                <header class="products-editorial-bar">
+                    <div class="bar-left">
+                        <span class="section-kicker">SELECTED PIECES / 2026</span>
+                        <h2 class="section-display-title">Sản Phẩm Tiêu Biểu</h2>
+                    </div>
+                    <div class="bar-right">
+                        <a href="products.html" class="editorial-inline-link">
+                            <span>Xem toàn bộ danh mục</span>
+                            <span class="link-arrow">&rarr;</span>
+                        </a>
+                    </div>
+                </header>
+
+                <div class="products-grid-3col">
+                    
+                    <!-- Product 1: Denim -->
+                    <article class="flyer-product-card" id="item-denim">
+                        <div class="flyer-media-box">
+                            <span class="flyer-tag">ARCHIVE PIECE</span>
+                            <img src="images/ao-khoac-denim.jpg" alt="Áo khoác Denim Vintage" loading="lazy">
+                            <a href="buy.html" class="quick-order-overlay" aria-label="Đặt mua Áo khoác Denim Vintage">
+                                <span>Đặt mua sản phẩm</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="flyer-content">
+                            <div class="flyer-meta-top">
+                                <span class="flyer-item-code">ITEM #01 &bull; OUTERWEAR</span>
+                                <span class="flyer-stock-badge">CÒN HÀNG</span>
+                            </div>
+                            <h3 class="flyer-product-title">Áo Khoác Denim Vintage</h3>
+                            <p class="flyer-product-desc">Chất jean wash màu bụi bặm, form đứng cá tính cho tiết trời se lạnh.</p>
+                            
+                            <div class="flyer-price-ticket">
+                                <div class="flyer-price-left">
+                                    <span class="flyer-price-label">GIÁ ĐỒNG HÀNH</span>
+                                    <div class="flyer-price-figure">
+                                        <span class="flyer-price-number">149.000</span>
+                                        <span class="flyer-price-currency">₫</span>
+                                    </div>
+                                </div>
+                                <div class="flyer-price-right">
+                                    <span class="flyer-old-strike">199.000₫</span>
+                                    <span class="flyer-save-pill">-25%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flyer-card-actions">
+                                <a href="buy.html" class="flyer-order-btn">
+                                    <span>Đặt Mua Ngay</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2: Summer T-Shirt -->
+                    <article class="flyer-product-card" id="item-tshirt">
+                        <div class="flyer-media-box">
+                            <span class="flyer-tag">ESSENTIAL</span>
+                            <img src="images/ao-thun-summer.jpg" alt="Áo thun Summer Urban" loading="lazy">
+                            <a href="buy.html" class="quick-order-overlay" aria-label="Đặt mua Áo thun Summer Urban">
+                                <span>Đặt mua sản phẩm</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="flyer-content">
+                            <div class="flyer-meta-top">
+                                <span class="flyer-item-code">ITEM #02 &bull; T-SHIRT</span>
+                                <span class="flyer-stock-badge">CÒN HÀNG</span>
+                            </div>
+                            <h3 class="flyer-product-title">Áo Thun Summer Urban</h3>
+                            <p class="flyer-product-desc">100% cotton chải kỹ, thấm hút mồ hôi tối ưu khi hoạt động.</p>
+                            
+                            <div class="flyer-price-ticket">
+                                <div class="flyer-price-left">
+                                    <span class="flyer-price-label">GIÁ ĐỒNG HÀNH</span>
+                                    <div class="flyer-price-figure">
+                                        <span class="flyer-price-number">129.000</span>
+                                        <span class="flyer-price-currency">₫</span>
+                                    </div>
+                                </div>
+                                <div class="flyer-price-right">
+                                    <span class="flyer-old-strike">160.000₫</span>
+                                    <span class="flyer-save-pill">-19%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flyer-card-actions">
+                                <a href="buy.html" class="flyer-order-btn">
+                                    <span>Đặt Mua Ngay</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3: Flared Dress -->
+                    <article class="flyer-product-card" id="item-dress">
+                        <div class="flyer-media-box">
+                            <span class="flyer-tag">SILHOUETTE</span>
+                            <img src="images/dam-nu-xoe.jpg" alt="Đầm nữ dáng xòe pastel" loading="lazy">
+                            <a href="buy.html" class="quick-order-overlay" aria-label="Đặt mua Đầm nữ dáng xòe">
+                                <span>Đặt mua sản phẩm</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="flyer-content">
+                            <div class="flyer-meta-top">
+                                <span class="flyer-item-code">ITEM #03 &bull; DRESS</span>
+                                <span class="flyer-stock-badge">CÒN HÀNG</span>
+                            </div>
+                            <h3 class="flyer-product-title">Đầm Dáng Xòe Pastel</h3>
+                            <p class="flyer-product-desc">Voan lụa mềm 2 lớp, tôn nét thanh tú nhẹ nhàng cho phái nữ.</p>
+                            
+                            <div class="flyer-price-ticket">
+                                <div class="flyer-price-left">
+                                    <span class="flyer-price-label">GIÁ ĐỒNG HÀNH</span>
+                                    <div class="flyer-price-figure">
+                                        <span class="flyer-price-number">200.000</span>
+                                        <span class="flyer-price-currency">₫</span>
+                                    </div>
+                                </div>
+                                <div class="flyer-price-right">
+                                    <span class="flyer-old-strike">250.000₫</span>
+                                    <span class="flyer-save-pill">-20%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flyer-card-actions">
+                                <a href="buy.html" class="flyer-order-btn">
+                                    <span>Đặt Mua Ngay</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4: Minimalist Shirt -->
+                    <article class="flyer-product-card" id="item-shirt">
+                        <div class="flyer-media-box">
+                            <span class="flyer-tag">CASUAL FORMAL</span>
+                            <img src="images/ao-so-mi.jpg" alt="Áo sơ mi tay ngắn Minimal" loading="lazy">
+                            <a href="buy.html" class="quick-order-overlay" aria-label="Đặt mua Áo sơ mi Minimal">
+                                <span>Đặt mua sản phẩm</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="flyer-content">
+                            <div class="flyer-meta-top">
+                                <span class="flyer-item-code">ITEM #04 &bull; SHIRT</span>
+                                <span class="flyer-stock-badge">CÒN HÀNG</span>
+                            </div>
+                            <h3 class="flyer-product-title">Sơ Mi Tay Ngắn Minimal</h3>
+                            <p class="flyer-product-desc">Tone màu sage dịu mắt, chất đũi tự nhiên nhẹ và không bí bách.</p>
+                            
+                            <div class="flyer-price-ticket">
+                                <div class="flyer-price-left">
+                                    <span class="flyer-price-label">GIÁ ĐỒNG HÀNH</span>
+                                    <div class="flyer-price-figure">
+                                        <span class="flyer-price-number">89.000</span>
+                                        <span class="flyer-price-currency">₫</span>
+                                    </div>
+                                </div>
+                                <div class="flyer-price-right">
+                                    <span class="flyer-old-strike">120.000₫</span>
+                                    <span class="flyer-save-pill">-26%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flyer-card-actions">
+                                <a href="buy.html" class="flyer-order-btn">
+                                    <span>Đặt Mua Ngay</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 5: College Varsity Jacket -->
+                    <article class="flyer-product-card" id="item-varsity">
+                        <div class="flyer-media-box">
+                            <span class="flyer-tag">CAMPUS ICON</span>
+                            <img src="images/ao-khoac-varsity.jpg" alt="Áo khoác bóng chày Varsity" loading="lazy">
+                            <a href="buy.html" class="quick-order-overlay" aria-label="Đặt mua Áo khoác Varsity">
+                                <span>Đặt mua sản phẩm</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="flyer-content">
+                            <div class="flyer-meta-top">
+                                <span class="flyer-item-code">ITEM #05 &bull; BOMBER</span>
+                                <span class="flyer-stock-badge">CÒN HÀNG</span>
+                            </div>
+                            <h3 class="flyer-product-title">Áo Khoác Bóng Chày College</h3>
+                            <p class="flyer-product-desc">Cảm hứng học đường cổ điển, phối tay da thanh lịch và bo chun co giãn.</p>
+                            
+                            <div class="flyer-price-ticket">
+                                <div class="flyer-price-left">
+                                    <span class="flyer-price-label">GIÁ ĐỒNG HÀNH</span>
+                                    <div class="flyer-price-figure">
+                                        <span class="flyer-price-number">199.000</span>
+                                        <span class="flyer-price-currency">₫</span>
+                                    </div>
+                                </div>
+                                <div class="flyer-price-right">
+                                    <span class="flyer-old-strike">260.000₫</span>
+                                    <span class="flyer-save-pill">-23%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flyer-card-actions">
+                                <a href="buy.html" class="flyer-order-btn">
+                                    <span>Đặt Mua Ngay</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 6: Sport Windbreaker -->
+                    <article class="flyer-product-card" id="item-windbreaker">
+                        <div class="flyer-media-box">
+                            <span class="flyer-tag">LIGHT TECH</span>
+                            <img src="images/hero-banner.jpg" alt="Áo khoác gió thể thao" loading="lazy">
+                            <a href="buy.html" class="quick-order-overlay" aria-label="Đặt mua Áo khoác gió thể thao">
+                                <span>Đặt mua sản phẩm</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="flyer-content">
+                            <div class="flyer-meta-top">
+                                <span class="flyer-item-code">ITEM #06 &bull; WINDBREAKER</span>
+                                <span class="flyer-stock-badge">CÒN HÀNG</span>
+                            </div>
+                            <h3 class="flyer-product-title">Áo Khoác Gió Thể Thao</h3>
+                            <p class="flyer-product-desc">Chống gió, trượt nước nhẹ, gọn nhẹ dễ gấp bỏ balo, thích hợp đi học sớm và đi phượt.</p>
+                            
+                            <div class="flyer-price-ticket">
+                                <div class="flyer-price-left">
+                                    <span class="flyer-price-label">GIÁ ĐỒNG HÀNH</span>
+                                    <div class="flyer-price-figure">
+                                        <span class="flyer-price-number">99.000</span>
+                                        <span class="flyer-price-currency">₫</span>
+                                    </div>
+                                </div>
+                                <div class="flyer-price-right">
+                                    <span class="flyer-old-strike">140.000₫</span>
+                                    <span class="flyer-save-pill">-29%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flyer-card-actions">
+                                <a href="buy.html" class="flyer-order-btn">
+                                    <span>Đặt Mua Ngay</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Manifesto / Triết lý thương hiệu (Bố cục bất đối xứng dạng Tuyên ngôn) -->
+        <section class="manifesto-section" id="brand-manifesto">
+            <div class="container">
+                <div class="manifesto-grid">
+                    
+                    <div class="manifesto-lead">
+                        <span class="section-kicker">OUR ETHOS / TRIẾT LÝ</span>
+                        <h2 class="manifesto-statement">
+                            Thời trang sinh viên<br>
+                            không cần phô trương,<br>
+                            <span class="calligraphic-accent">chỉ cần chân thật.</span>
+                        </h2>
+                        <p class="manifesto-narrative">
+                            Chúng tôi tin rằng sinh viên xứng đáng có những trang phục đẹp đẽ, bền bỉ mà không phải đánh đổi bằng áp lực chi tiêu. Mỗi thiết kế của HEYDAY là lời khẳng định về gu thẩm mỹ tinh tế và sự tự do của người trẻ.
+                        </p>
+                        <div class="manifesto-signature">
+                            <span class="sig-title">HEYDAY STORE</span>
+                            <span class="sig-loc">Hà Nội, Việt Nam &bull; 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="manifesto-pillars">
+                        <article class="pillar-row">
+                            <span class="pillar-idx">01</span>
+                            <div class="pillar-body">
+                                <h3 class="pillar-heading">Mức Giá Đồng Hành Cùng Sinh Viên</h3>
+                                <p class="pillar-desc">Cắt bỏ toàn bộ chi phí trung gian và bao bì phô trương để sản phẩm luôn chạm ngưỡng giá hợp lý nhất (từ 89.000đ).</p>
+                            </div>
+                        </article>
+
+                        <article class="pillar-row">
+                            <span class="pillar-idx">02</span>
+                            <div class="pillar-body">
+                                <h3 class="pillar-heading">Tính Ứng Dụng & Phom Dáng Tự Nhiên</h3>
+                                <p class="pillar-desc">Phom dáng rộng rãi, dễ dàng kết hợp cho lịch trình bận rộn: từ giảng đường buổi sáng đến buổi làm thêm buổi tối.</p>
+                            </div>
+                        </article>
+
+                        <article class="pillar-row">
+                            <span class="pillar-idx">03</span>
+                            <div class="pillar-body">
+                                <h3 class="pillar-heading">Chất Vải Thân Thiện & Thoáng Khí</h3>
+                                <p class="pillar-desc">Ưu tiên các dòng sợi tự nhiên: cotton, linen và denim dày dặn, chịu giặt tốt và bền bỉ qua từng học kỳ.</p>
+                            </div>
+                        </article>
+
+                        <article class="pillar-row">
+                            <span class="pillar-idx">04</span>
+                            <div class="pillar-body">
+                                <h3 class="pillar-heading">Giao Nhận Ký Túc Xá & Đổi Size 7 Ngày</h3>
+                                <p class="pillar-desc">Hỗ trợ giao hàng tận nơi trên toàn quốc, đồng hành hỗ trợ đổi trả linh hoạt nếu không vừa kích cỡ.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Minimalist Architectural Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top-row">
+                <div class="footer-col-main">
+                    <span class="footer-brand-title">HEYDAY</span>
+                    <p class="footer-brand-subtitle">STUDIO & DAILY WEAR FOR STUDENTS</p>
+                    <p class="footer-bio">
+                        Thương hiệu thời trang độc lập dành cho sinh viên Việt Nam. Tôn vinh nét đẹp chân thực, mộc mạc và phong cách tự do của thế hệ mới.
+                    </p>
+                </div>
+
+                <div class="footer-col-nav">
+                    <span class="footer-heading">Mục lục</span>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="products.html">Bộ sưu tập</a></li>
+                        <li><a href="about.html">Triết lý sáng lập</a></li>
+                        <li><a href="buy.html">Đặt mua trực tuyến</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-nav">
+                    <span class="footer-heading">Hỗ trợ</span>
+                    <ul class="footer-list">
+                        <li><a href="buy.html">Bảng quy chuẩn size</a></li>
+                        <li><a href="buy.html">Chính sách giao nhận</a></li>
+                        <li><a href="buy.html">Đổi trả trong 7 ngày</a></li>
+                        <li><a href="buy.html">Hỗ trợ sinh viên</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-contact">
+                    <span class="footer-heading">Thông tin liên hệ</span>
+                    <address class="footer-address">
+                        <p>Khuôn viên ĐH Phenikaa, Yên Nghĩa, Hà Đông, Hà Nội</p>
+                        <p>Hotline: <a href="tel:0987654321">0987.654.321</a></p>
+                        <p>Email: <a href="mailto:heyday.studio@gmail.com">heyday.studio@gmail.com</a></p>
+                        <p class="working-hours">Giờ tiếp đón: 08:30 &mdash; 21:30</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <span class="copyright-note">&copy; 2026 HEYDAY STUDIO. All rights reserved.</span>
+                <span class="design-credit">Editorial Fashion Showcase for Vietnamese Students</span>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -1,103 +1,188 @@
-```html
-<main>
-    <section>
-        <h2>Đồ dùng tiện ích dành cho sinh viên</h2>
-        <p>Student Shop cung cấp các sản phẩm đơn giản, tiện dụng và phù hợp với nhu cầu học tập, sinh hoạt hằng ngày của sinh viên.</p>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Triết lý & sứ mệnh của HEYDAY Studio — Người bạn đồng hành tin cậy của sinh viên Việt Nam trên hành trình định hình phong cách sống tự do, hiện đại.">
+    <title>Triết Lý Sáng Lập — HEYDAY Studio</title>
 
-        <img src="hinhanh/ao1.jpg" alt="Áo thun Summer">
-        <img src="hinhanh/ao2.jpg" alt="Bộ đồ họa tiết dễ thương">
-        <img src="hinhanh/ao3.jpg" alt="Áo sơ mi nam tay ngắn">
-        <img src="hinhanh/ao4.jpg" alt="Đầm nữ dáng xòe">
-        <img src="hinhanh/ao5.jpg" alt="Áo khoác denim nam">
-        <img src="hinhanh/ao6.jpg" alt="Áo khoác gió thể thao">
-        <img src="hinhanh/ao7.jpg" alt="Áo len nam nữ">
-        <img src="hinhanh/ao8.jpg" alt="Áo khoác bóng chày">
-    </section>
+    <!-- Google Fonts: Cormorant Garamond & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <hr>
+    <!-- Kinetic Editorial Marquee Ticker -->
+    <aside class="editorial-ticker" aria-label="Thông báo thời trang">
+        <div class="ticker-track">
+            <span>HEYDAY STUDIO / SPRING SUMMER 2026</span>
+            <span class="ticker-dot">•</span>
+            <span>THỜI TRANG SINH VIÊN & BẢN SẮC TRẺ</span>
+            <span class="ticker-dot">•</span>
+            <span>CHẤT VẢI TUYỂN CHỌN / FORM DÁNG TỰ NHIÊN</span>
+            <span class="ticker-dot">•</span>
+            <span>GIAO HÀNG TOÀN QUỐC & ĐỔI SIZE 7 NGÀY</span>
+            <span class="ticker-dot">•</span>
+            <span>HEYDAY STUDIO / SPRING SUMMER 2026</span>
+            <span class="ticker-dot">•</span>
+            <span>THỜI TRANG SINH VIÊN & BẢN SẮC TRẺ</span>
+            <span class="ticker-dot">•</span>
+            <span>CHẤT VẢI TUYỂN CHỌN / FORM DÁNG TỰ NHIÊN</span>
+            <span class="ticker-dot">•</span>
+            <span>GIAO HÀNG TOÀN QUỐC & ĐỔI SIZE 7 NGÀY</span>
+            <span class="ticker-dot">•</span>
+        </div>
+    </aside>
 
-    <section>
-        <h2>Sản phẩm nổi bật</h2>
+    <!-- Minimalist Architectural Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo" id="brand-logo">
+                <span class="logo-name">HEYDAY</span>
+                <span class="logo-sub">STUDIO</span>
+            </a>
 
-        <article>
-            <h3>Áo thun Summer</h3>
-            <figure>
-                <img src="hinhanh/ao1.jpg" alt="Áo thun Summer">
-                <figcaption>Áo thun cotton thoáng mát, thoải mái cho sinh viên.</figcaption>
-                <p>Giá: 129.000 VNĐ</p>
-                <button>Thêm vào giỏ</button>
-            </figure>
-        </article>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html" class="nav-item">Trang chủ</a>
+                <a href="products.html" class="nav-item">Bộ sưu tập</a>
+                <a href="about.html" class="nav-item active">Triết lý</a>
+            </nav>
 
-        <article>
-            <h3>Bộ đồ họa tiết dễ thương</h3>
-            <figure>
-                <img src="hinhanh/ao2.jpg" alt="Bộ đồ họa tiết dễ thương">
-                <figcaption>Trang phục mềm mại, phù hợp mặc ở nhà hoặc đi học.</figcaption>
-                <p>Giá: 139.000 VNĐ</p>
-                <button>Thêm vào giỏ</button>
-            </figure>
-        </article>
+            <div class="header-right">
+                <a href="buy.html" class="bag-link" id="bag-link">
+                    <span class="bag-text">Giỏ hàng</span>
+                    <span class="bag-count">[ 0 ]</span>
+                </a>
+                <a href="buy.html" class="header-action-btn" id="header-cta">Mua hàng</a>
+            </div>
+        </div>
+    </header>
 
-        <article>
-            <h3>Áo sơ mi nam tay ngắn</h3>
-            <figure>
-                <img src="hinhanh/ao3.jpg" alt="Áo sơ mi nam tay ngắn">
-                <figcaption>Chất vải thoáng mát, lịch sự, dễ phối đồ.</figcaption>
-                <p>Giá: 89.000 VNĐ</p>
-                <button>Thêm vào giỏ</button>
-            </figure>
-        </article>
+    <main class="about-page">
+        <!-- Hero Statement Section -->
+        <section class="catalogue-intro">
+            <div class="container">
+                <div class="catalogue-intro-grid">
+                    <div>
+                        <span class="section-kicker">ABOUT US / BẢN SẮC & SỨ MỆNH</span>
+                        <h1 class="section-display-title">
+                            Câu Chuyện<br>
+                            <span class="calligraphic-accent">Của HEYDAY.</span>
+                        </h1>
+                    </div>
+                    <div class="catalogue-intro-lead">
+                        <p>
+                            <strong>HEYDAY Studio</strong> được thành lập với mục tiêu trở thành người bạn đồng hành tin cậy của sinh viên Việt Nam trên con đường học tập và phát triển bản thân. Chúng tôi hiểu rằng thời sinh viên không chỉ cần trang phục tiện ích, thẩm mỹ mà còn cần mức giá hợp lý và phù hợp với túi tiền.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article>
-            <h3>Đầm nữ dáng xòe</h3>
-            <figure>
-                <img src="hinhanh/ao4.jpg" alt="Đầm nữ dáng xòe">
-                <figcaption>Thiết kế nhẹ nhàng, nữ tính, phù hợp đi học, đi chơi.</figcaption>
-                <p>Giá: 200.000 VNĐ</p>
-                <button>Thêm vào giỏ</button>
-            </figure>
-        </article>
+        <!-- Mission & Vision Split -->
+        <section class="manifesto-section">
+            <div class="container">
+                <div class="manifesto-grid">
+                    <div class="manifesto-lead">
+                        <span class="section-kicker">VISION & MISSION</span>
+                        <h2 class="manifesto-statement">
+                            Kiến tạo phong cách sống<br>
+                            <span class="calligraphic-accent">tự do & hiện đại.</span>
+                        </h2>
+                        <p class="manifesto-narrative">
+                            Trở thành thương hiệu mua sắm hàng đầu dành riêng cho giới trẻ và sinh viên trên toàn quốc, đồng hành cùng thế hệ trẻ tạo nên những bước chuyển mình tự tin nhất.
+                        </p>
+                    </div>
 
-        <article>
-            <h3>Áo khoác denim nam</h3>
-            <figure>
-                <img src="hinhanh/ao5.jpg" alt="Áo khoác denim nam">
-                <figcaption>Chất jean bền đẹp, giữ ấm tốt, phù hợp cho mùa lạnh.</figcaption>
-                <p>Giá: 149.000 VNĐ</p>
-                <button>Thêm vào giỏ</button>
-            </figure>
-        </article>
+                    <div class="manifesto-pillars">
+                        <article class="pillar-row">
+                            <span class="pillar-idx">01</span>
+                            <div class="pillar-body">
+                                <h3 class="pillar-heading">Sứ Mệnh Đồng Hành</h3>
+                                <p class="pillar-desc">Mang đến cho sinh viên những giải pháp mua sắm tối ưu nhất thông qua các sản phẩm quần áo, đồ dùng tiện ích chất lượng, đa dạng mẫu mã cùng dịch vụ tận tâm.</p>
+                            </div>
+                        </article>
 
-        <article>
-            <h3>Áo khoác gió thể thao</h3>
-            <figure>
-                <img src="hinhanh/ao6.jpg" alt="Áo khoác gió thể thao">
-                <figcaption>Chống gió, chống nước nhẹ, thích hợp đi học, đi phượt.</figcaption>
-                <p>Giá: 99.000 VNĐ</p>
-                <button>Thêm vào giỏ</button>
-            </figure>
-        </article>
+                        <article class="pillar-row">
+                            <span class="pillar-idx">02</span>
+                            <div class="pillar-body">
+                                <h3 class="pillar-heading">Giá Cả Thấu Hiểu Sinh Viên</h3>
+                                <p class="pillar-desc">Mức giá luôn được ưu đãi và trợ giá tốt nhất, chỉ từ 89.000₫, hoàn toàn nằm trong ngân sách tiêu dùng của các bạn trẻ.</p>
+                            </div>
+                        </article>
 
-        <article>
-            <h3>Áo len nam/nữ</h3>
-            <figure>
-                <img src="hinhanh/ao7.jpg" alt="Áo len nam nữ">
-                <figcaption>Len mềm, giữ ấm tốt, phong cách trẻ trung.</figcaption>
-                <p>Giá: 179.000 VNĐ</p>
-                <button>Thêm vào giỏ</button>
-            </figure>
-        </article>
+                        <article class="pillar-row">
+                            <span class="pillar-idx">03</span>
+                            <div class="pillar-body">
+                                <h3 class="pillar-heading">Mẫu Mã Xu Hướng & Bền Bỉ</h3>
+                                <p class="pillar-desc">Cập nhật liên tục các xu hướng thời trang trẻ trung, kết hợp chất liệu vải thoáng mát, bền đẹp đáp ứng tốt nhịp độ hoạt động hằng ngày.</p>
+                            </div>
+                        </article>
 
-        <article>
-            <h3>Áo khoác bóng chày</h3>
-            <figure>
-                <img src="hinhanh/ao8.jpg" alt="Áo khoác bóng chày">
-                <figcaption>Thiết kế năng động, trẻ trung, phù hợp cho cả nam và nữ.</figcaption>
-                <p>Giá: 199.000 VNĐ</p>
-                <button>Thêm vào giỏ</button>
-            </figure>
-        </article>
-    </section>
-</main>
-```
+                        <article class="pillar-row">
+                            <span class="pillar-idx">04</span>
+                            <div class="pillar-body">
+                                <h3 class="pillar-heading">Giao Nhận Nhanh Chóng Toàn Quốc</h3>
+                                <p class="pillar-desc">Hỗ trợ giao hàng tận ký túc xá và khu trọ sinh viên trên toàn quốc với chi phí tiết kiệm và chính sách đổi size 7 ngày tiện lợi.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimalist Architectural Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top-row">
+                <div class="footer-col-main">
+                    <span class="footer-brand-title">HEYDAY</span>
+                    <p class="footer-brand-subtitle">STUDIO & DAILY WEAR FOR STUDENTS</p>
+                    <p class="footer-bio">
+                        Thương hiệu thời trang độc lập dành cho sinh viên Việt Nam. Tôn vinh nét đẹp chân thực, mộc mạc và phong cách tự do của thế hệ mới.
+                    </p>
+                </div>
+
+                <div class="footer-col-nav">
+                    <span class="footer-heading">Mục lục</span>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="products.html">Bộ sưu tập</a></li>
+                        <li><a href="about.html">Triết lý sáng lập</a></li>
+                        <li><a href="buy.html">Đặt mua trực tuyến</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-nav">
+                    <span class="footer-heading">Hỗ trợ</span>
+                    <ul class="footer-list">
+                        <li><a href="buy.html">Bảng quy chuẩn size</a></li>
+                        <li><a href="buy.html">Chính sách giao nhận</a></li>
+                        <li><a href="buy.html">Đổi trả trong 7 ngày</a></li>
+                        <li><a href="buy.html">Hỗ trợ sinh viên</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-contact">
+                    <span class="footer-heading">Thông tin liên hệ</span>
+                    <address class="footer-address">
+                        <p>Khuôn viên ĐH Phenikaa, Yên Nghĩa, Hà Đông, Hà Nội</p>
+                        <p>Hotline: <a href="tel:0987654321">0987.654.321</a></p>
+                        <p>Email: <a href="mailto:heyday.studio@gmail.com">heyday.studio@gmail.com</a></p>
+                        <p class="working-hours">Giờ tiếp đón: 08:30 &mdash; 21:30</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <span class="copyright-note">&copy; 2026 HEYDAY STUDIO. All rights reserved.</span>
+                <span class="design-credit">Editorial Fashion Showcase for Vietnamese Students</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
