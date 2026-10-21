@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mua hàng - HEYDAY Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">HEYDAY Store</a>
+
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="products.html">Sản phẩm</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="buy.html" class="active">Mua hàng</a>
+        </nav>
+    </header>
+
+    <main class="buy-page">
+        <section class="buy-intro">
+            <p class="subtitle">HEYDAY STORE</p>
+            <h1>Đặt hàng ngay</h1>
+            <p>Điền thông tin bên dưới để đặt mua sản phẩm yêu thích.</p>
+        </section>
+
+        <section class="buy-section">
+            <form class="buy-form" action="#" method="post">
+
+                <h2>Thông tin đơn hàng</h2>
+
+                <label for="fullname">Họ và tên</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Nhập họ và tên"
+                    required
+                >
+
+                <label for="phone">Số điện thoại</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Nhập số điện thoại"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Nhập địa chỉ email"
+                >
+
+                <label for="address">Địa chỉ nhận hàng</label>
+                <textarea
+                    id="address"
+                    name="address"
+                    placeholder="Nhập địa chỉ nhận hàng"
+                    required
+                ></textarea>
+
+                <label for="product">Tên sản phẩm</label>
+                <input
+                    type="text"
+                    id="product"
+                    name="product"
+                    placeholder="Nhập tên sản phẩm muốn mua"
+                    required
+                >
+
+                <label for="size">Kích cỡ</label>
+                <select id="size" name="size" required>
+                    <option value="">-- Chọn kích cỡ --</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="quantity">Số lượng</label>
+                <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    value="1"
+                    required
+                >
+
+                <label for="note">Ghi chú</label>
+                <textarea
+                    id="note"
+                    name="note"
+                    placeholder="Ghi chú thêm nếu có"
+                ></textarea>
+
+                <button type="submit" class="btn submit-btn">
+                    Xác nhận đặt hàng
+                </button>
+
+                <a href="index.html" class="back-link">
+                    Quay lại trang chủ
+                </a>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HEYDAY Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
